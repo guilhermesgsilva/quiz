@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern quiz application built with React (Vite) and TypeScript, styled using Styled-Components, and powered by the Open Trivia DB API.
 
-Currently, two official plugins are available:
+## Features
+- Dynamic quiz questions fetched from the [Open Trivia DB](https://opentdb.com/)
+- Styled with Styled-Components for a sleek UI
+- Fast and optimized performance with Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## Expanding the ESLint configuration
+[Live Demo](https://guilhermesgsilva.github.io/quiz/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
+- **Frontend:** React (Vite), TypeScript
+- **Styling:** Styled-Components
+- **API:** Open Trivia DB
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [npm](https://www.npmjs.com/) or yarn
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/quiz-app.git
+   cd quiz-app
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Install dependencies:
+   ```sh
+   npm install  # or yarn install
+   ```
+
+3. Start the development server:
+   ```sh
+   npm run dev  # or yarn dev
+   ```
+
+4. Open the app in your browser at `http://localhost:5173/`
+
+## Configuration
+The app fetches quiz questions from the Open Trivia DB API. You can modify the API request parameters in the source code to customize the quiz experience.
