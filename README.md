@@ -27,8 +27,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/quiz-app.git
-   cd quiz-app
+   git clone https://github.com/guilhermesgsilva/quiz.git
+   cd quiz
    ```
 
 2. Install dependencies:
